@@ -27,14 +27,14 @@ h2,h3,h4,p{
 }
 
 h2{
-    font-size: 50px;
+    font-size: 30px;
     /* color: purple; */
     color:white;    
 
 }
 
 h3{
-    font-size: 30px;
+    font-size: 20px;
 }
 
 h4{
@@ -52,12 +52,12 @@ img{
 
 .logo img{
     margin-top: 60px;
-    
+    max-width: 350px;
 }  
 
 
 p{
-    font-size:20px;
+    font-size:12px;
     margin:10px 0;
    
 }
@@ -77,7 +77,7 @@ a{
 
 /* Contenedor */
 .contenedor{
-    max-width: 2000px;
+    max-width: 1200px;
     margin: 0 auto;
     padding:0 30px;
 }
@@ -96,6 +96,7 @@ button{
     font-weight: 500;
     border-radius:50px;
     margin-top: 20px;
+    
 }
 
 
@@ -112,7 +113,7 @@ button:hover{
     background-color: rgba(95, 67, 95, 0.797);
     background-repeat: no-repeat;
     background-size: cover;
-    height:100px;
+    height:70px;
     
     /* texto */
     color:white;
@@ -132,19 +133,19 @@ button:hover{
 } 
 
 .barraNav .logo {
-    font-size: 40px;
+    font-size: 20px;
     font-weight: bold;
     
     position: absolute;
-    top: 50%;
-    left: 30px;
+    top: 25%;
+    left: 10px;
     
     transform: translateY(-50%);
 }
 
 .barraNav a{
     color: white;
-    font-size:40px;
+    font-size:25px;
     font-weight: bold ;
     margin-left:20px; 
 }
@@ -163,7 +164,7 @@ button:hover{
 }
 
 .menu a{
-    margin: 40px;
+    margin: 25px;
 }
 
 .barraNav .menu{
@@ -174,7 +175,7 @@ button:hover{
   flex-grow: 1;  /* crece su tamaño mas que otro elemento, si hubiera 2 con flex grow se reparte*/
   
   position: absolute;
-  top: 50%;
+  top: 35%;
   right: 30px;
   transform: translateY(-50%);
 
@@ -195,22 +196,22 @@ button:hover{
     }
     #header{
 
-        height:200px;
+        height:150px;
     }
-    .barraNav .logo{
-        max-width: 40%;
-        margin-top: 0px;
-        
-    }
+    .logo img{
+        margin-top: 60px;
+        max-width: 150px;
+    }  
     
       .menu a{
-        
         margin: 0px;
     }
    
    
 
 }
+
+
 
 
 
@@ -248,7 +249,7 @@ button:hover{
 }
 
 #proyectos .contenedor{
-    padding-top: 40px;
+    padding-top: 30px;
     margin-bottom: 200px;
 }
 
@@ -261,7 +262,7 @@ button:hover{
     
     flex:1;
     border:1px solid white; 
-    margin: 20px 10px;
+    margin: 10px 5px;
     background-color: gainsboro;
 }
 
@@ -300,12 +301,12 @@ button:hover{
 #contacto svg{   
     display: inline-block;
     vertical-align: middle;
-    margin: 10px;
+    margin: 20px;
 }
 
 
 #contacto{
-    padding: 150px 0;
+    padding: 100px 0;
     
 
 }
@@ -326,9 +327,9 @@ button:hover{
 }
 
 .cajaFormulario h4{
-    font-weight: 600;
-    font-size: x-large;
-    padding-bottom: 20px;
+    font-weight: 400;
+    font-size: medium;
+    padding-bottom: 10px;
     font-weight: normal;
 }
 
@@ -336,7 +337,7 @@ button:hover{
 .formatoFormulario{
     display: block;
     width: 100%;
-    padding: 6px 10px;
+    /* padding: 6px 10px; */
     border:1px solid black;
     border-radius: 4px;
     line-height: 1.5;
@@ -367,12 +368,12 @@ footer{
 }
 
 footer {
-    height: 100px;
+    /* height: 100px; */
 }
 
 footer.pieDePagina img{
     transition:transform 0.2s ease-in-out;
-    margin:10px;
+    /* margin:10px; */
     padding: 5px;
    
 }
@@ -386,7 +387,7 @@ footer.pieDePagina img:hover{
 #sobreMi{
     padding: 350px 0;
     text-align: center;
-    margin-top: 100px;
+    /* margin-top: 100px; */
     
 }
 
@@ -413,7 +414,7 @@ footer.pieDePagina img:hover{
 .formPrincipal .descripcionT{
     text-align: justify;
     margin: 0 10%; 
-    font-size: 23px;
+    font-size: 15px;
     font-weight: normal;
 
 }
@@ -439,7 +440,7 @@ footer.pieDePagina img:hover{
     text-align: center;
 }
 .tecnologias{
-    padding: 50px;
+    padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center; 
@@ -472,7 +473,7 @@ footer.pieDePagina img:hover{
 /*ajustes esteticos*/
  .contenedor .formPrincipal{
    
-     max-width: 1800px;
+    max-width: 1800px;
     margin: 0 auto;
     padding:0 30px; 
     
@@ -480,7 +481,7 @@ footer.pieDePagina img:hover{
 
   .formPrincipal img {
     width: 100%;
-    max-width: 400px;
+    max-width: 250px;
     border-radius: 50%;
   }
   
@@ -517,9 +518,9 @@ footer{
 }
 
 
-  html,
+  
   body{
-    background: url(imagenes/fondo13.png); 
+    background: url(imagenes/fondo.png); 
     /* background-position:center; */
     background-repeat:no-repeat;
     background-size:cover; 
@@ -536,31 +537,44 @@ footer{
   }
 
   #conocimientos{
-    padding-top: 600px;
+    padding-top: 350px;
   }
 
   #contacto{
-    padding-bottom: 300px;
+    padding-bottom: 30px;
   }
 
   #sobreMi{
-    padding-top: 400px;
+    padding-top: 300px;
   }
   
 
 
   @media (max-width: 1200px){
     #sobreMi{
-        padding-top: 300px;
+        padding-top: 200px;
     }
 
-    #conocimientos, #proyectos, #contacto{
-        padding-top: 50px;
-    }
 
-    #conocimientos, #proyectos{
-        padding-top: 400px;
+    #conocimientos, #proyectos,#contacto{
+        padding-top: 200px;
     }
     
+    
+}
+
+@media (max-width: 800px){
+    .cajaFormulario{
+        width: 100%;
+    }
+}
+
+
+ #proyectos{
+    padding-top: 150px;
+}
+
+.contenedor #contacto{
+    padding: 0 50px;
     
 }
