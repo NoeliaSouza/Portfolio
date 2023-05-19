@@ -141,7 +141,7 @@
             <h2 >Contacto</h2>
             <div class="cajaFormulario">
                 <h4>Contáctame rellenando los siguientes campos</h4>
-                 <form action="mailto:noesouza.es" method="post" enctype="text/plain">
+            <form action="mailto:noesouza.es" method="post" enctype="text/plain" onsubmit="return enviarCorreo()">
                 <div class="datosFormulario">
                     <label></label>
                     <input class="formatoFormulario" type="text" id="txtNombre" placeholder="Tu nombre">
@@ -149,7 +149,7 @@
                     
                 <div class="datosFormulario">
                     <label></label>
-                    <input class="formatoFormulario" type="tel" id="txtTel" placeholder="Tu teléfono">
+                    <input class="formatoFormulario" type="number" id="txtTel" placeholder="Tu teléfono">
                 </div>
 
                 <div class="datosFormulario">
@@ -167,9 +167,9 @@
                 <div>
                     <!-- <input class="boton" type="submit" value="Enviar"> -->
                 </div>
-                <button class="boton">Enviar</button>
+                <button onclick="validarFormulario()" class="boton">Enviar</button>
 
-            </div>
+             </div>
             
             </form>
 
