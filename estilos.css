@@ -1,0 +1,566 @@
+html,
+body{
+    /* secular */
+    font-family: 'Marcellus', serif;
+    
+    
+}
+
+
+/* Le sacamos el borde y margen a todo para poder manejarlo */
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+h2,h3,h4,p{
+    color: white;
+}
+
+.textProyecto{
+    color:black;
+}
+
+.cajaProyecto h3{
+    color: black;
+}
+
+h2{
+    font-size: 50px;
+    /* color: purple; */
+    color:white;    
+
+}
+
+h3{
+    font-size: 30px;
+}
+
+h4{
+    font-size: 15px;
+    
+}
+
+h2,h4{
+    margin-bottom: 15px;
+}
+
+img{
+    max-width: 100%;
+}
+
+.logo img{
+    margin-top: 60px;
+    
+}  
+
+
+p{
+    font-size:20px;
+    margin:10px 0;
+   
+}
+
+.descripcionT{
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+
+
+a{
+    text-decoration: none;
+}
+
+
+
+/* Contenedor */
+.contenedor{
+    max-width: 2000px;
+    margin: 0 auto;
+    padding:0 30px;
+}
+
+/* Boton */
+button{
+    background: purple;
+    border:none;
+    padding: 8px 30px;
+    color: white;
+    
+    display:inline-block;
+    font-size: 15px;
+    text-transform: uppercase;
+    cursor:pointer;
+    font-weight: 500;
+    border-radius:50px;
+    margin-top: 20px;
+}
+
+
+
+
+button:hover{
+    background: white;
+    border:1px solid rosybrown;
+    color:rosybrown;
+}
+
+/* Cabecera */
+#header{
+    background-color: rgba(95, 67, 95, 0.797);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:100px;
+    
+    /* texto */
+    color:white;
+
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+/* Navegador */
+.barraNav{
+    height: 100px;
+
+    position: relative;
+    padding: 0 30px;
+
+} 
+
+.barraNav .logo {
+    font-size: 40px;
+    font-weight: bold;
+    
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    
+    transform: translateY(-50%);
+}
+
+.barraNav a{
+    color: white;
+    font-size:40px;
+    font-weight: bold ;
+    margin-left:20px; 
+}
+
+.barraNav a:hover{
+    color:violet;
+    transform: scale(1.2);
+    transition:transform 0.2s ease-in-out;
+}
+
+.barraNav .contenedor{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%; /* cambia la distancia entre el tope de la ventana y el menu*/
+}
+
+.menu a{
+    margin: 40px;
+}
+
+.barraNav .menu{
+  font-size: large;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-grow: 1;  /* crece su tamaño mas que otro elemento, si hubiera 2 con flex grow se reparte*/
+  
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  transform: translateY(-50%);
+
+}
+
+
+@media (max-width: 1200px){
+    .barraNav .menu{
+        flex-direction: column;
+        align-items: flex-end;
+        font-size: medium;
+        margin-top: 20px;
+        /* font-size: smaller; */
+    }
+    
+    .barraNav{
+        margin-top: 20px;
+    }
+    #header{
+
+        height:200px;
+    }
+    .barraNav .logo{
+        max-width: 40%;
+        margin-top: 0px;
+        
+    }
+    
+      .menu a{
+        
+        margin: 0px;
+    }
+   
+   
+
+}
+
+
+
+/* Titulo */
+.titulo h1{
+    font-size: 50px;
+    font-weight: normal;
+    width: 55%;
+    float: right;
+    padding-top: 30%;
+}
+
+
+/*Proyectos*/
+#proyectos h2{
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 50px;
+}
+
+#proyectos svg{   
+    display: inline-block;
+    vertical-align: middle;
+    
+}
+
+.cajaProyecto p.textProyecto {
+    padding: 0 20px 10px 20px;
+    text-align: justify;
+}
+
+#proyectos{
+    /* padding: 50px 0; */
+    text-align: center;
+}
+
+#proyectos .contenedor{
+    padding-top: 40px;
+    margin-bottom: 200px;
+}
+
+.tiposProyectos{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cajaProyecto{
+    
+    flex:1;
+    border:1px solid white; 
+    margin: 20px 10px;
+    background-color: gainsboro;
+}
+
+.cajaProyecto h3{
+    padding-top: 15px;
+}
+
+.cajaProyecto p{
+    padding: 0 20px 10 20px;
+    /* text-align: justify; */
+}
+
+.cajaProyecto:hover{
+    transform: scale(1.1);
+    transition:transform 0.2s ease-in-out;
+}
+
+
+@media (max-width: 1200px){
+    .tiposProyectos{
+
+        flex-direction:column;
+        align-items: center;
+    }
+    
+}
+
+
+/* Formulario */
+
+#contacto h2{
+    display: inline-block;
+    margin-right: 10px;
+}
+
+#contacto svg{   
+    display: inline-block;
+    vertical-align: middle;
+    margin: 10px;
+}
+
+
+#contacto{
+    padding: 150px 0;
+    
+
+}
+
+#contacto, p{
+    text-align: center;
+}
+
+#contacto, h2{
+    margin-bottom: 40px;
+}
+
+.cajaFormulario{
+    padding:50px 60px;
+    width: 60%;
+    margin: 0 auto;
+    border:1px solid white;
+}
+
+.cajaFormulario h4{
+    font-weight: 600;
+    font-size: x-large;
+    padding-bottom: 20px;
+    font-weight: normal;
+}
+
+
+.formatoFormulario{
+    display: block;
+    width: 100%;
+    padding: 6px 10px;
+    border:1px solid black;
+    border-radius: 4px;
+    line-height: 1.5;
+    font-size: large;
+    background-color: gainsboro;
+}
+
+
+form textarea,input{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: small;
+}
+
+label{
+    text-align: left;
+    display: block;
+    margin-bottom: 5px;
+    font-size: large;
+    padding:8px;
+}
+
+
+/* Footer */ 
+footer{
+    background-color: rgba(95, 67, 95, 0.549);
+    text-align: center;
+    
+}
+
+footer {
+    height: 100px;
+}
+
+footer.pieDePagina img{
+    transition:transform 0.2s ease-in-out;
+    margin:10px;
+    padding: 5px;
+   
+}
+
+footer.pieDePagina img:hover{
+    transform: scale(1.2);
+}
+
+/* Sobre mi  */
+
+#sobreMi{
+    padding: 350px 0;
+    text-align: center;
+    margin-top: 100px;
+    
+}
+
+
+
+#sobreMi h2{
+    display: inline-block;
+    margin-right: 10px;
+}
+
+#sobreMi svg{   
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.formPrincipal{
+    display: flex;
+    padding-top: 50px;
+    padding-inline-start: 10%;
+    padding-inline-end: 10%;
+}
+
+
+.formPrincipal .descripcionT{
+    text-align: justify;
+    margin: 0 10%; 
+    font-size: 23px;
+    font-weight: normal;
+
+}
+
+@media (max-width: 1200px){
+    .formPrincipal{
+        flex-direction:column;
+        align-items: center;
+    }
+   .tecnologias{
+    width: 33.33%;
+    height: auto;
+    margin: 5px;
+   }
+    
+}
+
+
+/* Conocimiento */
+
+#conocimientos{
+    padding: 350px 0;
+    text-align: center;
+}
+.tecnologias{
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    flex-wrap: wrap;
+}
+
+.icono {
+    max-width: 100px; /* Ajusta el ancho deseado para las imágenes */
+    flex: 1 0 80px;
+    height: auto; /* Esto mantiene la proporción de la imagen */
+    margin: 5px; /* Agrega un margen entre las imágenes si lo deseas */
+    justify-content: center;
+    align-items: center;
+    display: flex;
+   
+}
+
+#conocimientos h2{
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+#conocimientos svg{   
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+/*ajustes esteticos*/
+ .contenedor .formPrincipal{
+   
+     max-width: 1800px;
+    margin: 0 auto;
+    padding:0 30px; 
+    
+}  
+
+  .formPrincipal img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 50%;
+  }
+  
+  
+  .icono {
+    width: 30%;
+    margin-bottom: 20px;
+  }
+  
+  @media (max-width: 1200px) {
+    .icono {
+      width: 200px;
+    }
+    
+    .tecnologias {
+        margin:auto; /* acomoda el margen automatico */
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px; /* distancia!*/
+        /* justify-items: center; */
+        justify-content:center;
+      }
+   
+  }
+
+
+  /* probando colores */
+footer{
+    background-color: rgb(17, 9, 20);
+} 
+
+#header{
+    background-color: rgba(17, 9, 20, 0.609);
+}
+
+
+  html,
+  body{
+    background: url(imagenes/fondo13.png); 
+    /* background-position:center; */
+    background-repeat:no-repeat;
+    background-size:cover; 
+  }
+
+  .contenedor   {
+    background-color: rgba(17, 9, 20, 0.609);
+    padding-top: 30px;
+    padding-bottom: 50px;
+  }
+
+  section{
+    padding-top: 350px;
+  }
+
+  #conocimientos{
+    padding-top: 600px;
+  }
+
+  #contacto{
+    padding-bottom: 300px;
+  }
+
+  #sobreMi{
+    padding-top: 400px;
+  }
+  
+
+
+  @media (max-width: 1200px){
+    #sobreMi{
+        padding-top: 300px;
+    }
+
+    #conocimientos, #proyectos, #contacto{
+        padding-top: 50px;
+    }
+
+    #conocimientos, #proyectos{
+        padding-top: 400px;
+    }
+    
+    
+}
