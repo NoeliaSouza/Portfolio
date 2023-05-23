@@ -546,6 +546,7 @@ footer{
 
   #sobreMi{
     padding-top: 300px;
+    /* padding-top: 20vh; */
   }
   
 
@@ -579,3 +580,24 @@ footer{
     
 }
 
+/* Otros arreglos */
+#sobreMi {
+    padding-top: 30vh; 
+  
+  }
+
+  #conocimientos{
+    padding-top: 35vh;
+  }
+  #proyectos{
+    padding-top: 15vh;
+  }
+  
+  @media (max-width: 800px){
+    #sobreMi{
+        padding-top: 230px; 
+    }
+    #conocimientos, #proyectos{
+        padding-top: 250px ;
+    }
+}
