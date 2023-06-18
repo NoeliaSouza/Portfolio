@@ -283,9 +283,12 @@ button:hover{
 
 @media (max-width: 1200px){
     .tiposProyectos{
-
+        
         flex-direction:column;
         align-items: center;
+    }
+    #proyectos .contenedor{
+        width:50vh;
     }
     
 }
@@ -379,7 +382,8 @@ footer.pieDePagina img{
 }
 
 footer.pieDePagina img:hover{
-    transform: scale(1.2);
+    transform: scale(1.3);
+    
 }
 
 /* Sobre mi  */
@@ -445,6 +449,13 @@ footer.pieDePagina img:hover{
     justify-content: space-between;
     align-items: center; 
     flex-wrap: wrap;
+}
+
+.imgTecnologia:hover{
+    background: violet;
+    border-radius: 50%;
+    transform: scale(1.3);
+    transition:transform 0.2s ease-in-out;
 }
 
 .icono {
