@@ -255,12 +255,14 @@ button:hover{
 
 .tiposProyectos{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
 .cajaProyecto{
     
-    flex:1;
+    /*flex:1;*/
+    flex-basis:calc(33.33% - 20px);
     border:1px solid white; 
     margin: 10px 5px;
     background-color: gainsboro;
@@ -372,9 +374,7 @@ footer{
     
 }
 
-footer {
-    /* height: 100px; */
-}
+
 
 footer.pieDePagina img{
     transition:transform 0.2s ease-in-out;
